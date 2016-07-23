@@ -1,0 +1,6 @@
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/item_list"
+    android:name="com.pheonixlabs.srkuruma.fixeddepositor.ItemListFragment"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:layout_marginLeft="4dp" android:layout_marginRight="2dp"
+    tools:context=".ItemListActivity" tools:layout="@android:layout/list_content" />

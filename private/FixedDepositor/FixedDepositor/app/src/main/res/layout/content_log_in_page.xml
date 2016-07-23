@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_log_in_page"
+    android:background="@drawable/login_background"
+    tools:context="com.pheonixlabs.srkuruma.fixeddepositor.LogInPage">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Fido"
+        android:textAlignment="gravity"
+        android:textSize="52sp"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily=""/>
+
+    <EditText
+        android:id="@+id/EmailId1"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Title"
+        android:hint="Enter Your Email Address"
+        android:layout_marginTop="75dp"
+        android:layout_width="220dp"
+        android:textAlignment="gravity"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/EmailId2"
+        android:inputType="textEmailAddress"
+        android:hint="Re-enter email address"
+        android:layout_below="@+id/EmailId1"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="gravity"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/Pin1"
+        android:layout_below="@+id/EmailId2"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter 4 digit PIN"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:textAlignment="gravity"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/Pin2"
+        android:layout_below="@+id/Pin1"
+        android:layout_centerHorizontal="true"
+        android:hint="Re-enter PIN"
+        android:textAlignment="gravity"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:maxLength="4"
+        android:inputType="numberPassword"
+        android:layout_marginTop="10dp"
+        android:layout_width="220dp"
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/DetailsSubmitButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_blue_light"
+        android:layout_below="@+id/Pin2"
+        android:text="Sign In"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:onClick="SignInClick"/>
+</RelativeLayout>

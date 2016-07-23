@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_add_fdpage"
+    tools:context="com.pheonixlabs.srkuruma.fixeddepositor.AddFDPage">
+    <AutoCompleteTextView
+        android:id="@+id/BankAutoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Bank Name"/>
+
+    <EditText
+        android:id="@+id/HolderNameText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/BankAutoComplete"
+        android:inputType="textPersonName"
+        android:hint="FD Primary Holder Name"
+        android:contentDescription="Account Holder Name"/>
+
+    <EditText
+        android:id="@+id/FDAmountText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:hint="FD Amount (e.g 10000.03)"
+        android:layout_below="@id/HolderNameText"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/FDPeriod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/FDAmountText"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_marginBottom="10dp">
+
+        <NumberPicker
+            android:id="@+id/YearPicker"
+            android:layout_width="50dp"
+            android:layout_height="50dp"></NumberPicker>
+
+        <TextView
+            android:id="@+id/YearPickerText"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/YearPicker"
+            android:text="Year(s)"
+            android:textAlignment="gravity"
+            android:textSize="16sp"/>
+
+        <NumberPicker
+            android:id="@+id/MonthsPicker"
+            android:layout_toRightOf="@+id/YearPickerText"
+            android:layout_width="55dp"
+            android:layout_height="50dp"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="10dp"></NumberPicker>
+
+        <TextView
+            android:id="@+id/FDMonthsPeriodText"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/MonthsPicker"
+            android:gravity="center"
+            android:text="Month(s)"
+            android:textAlignment="gravity"
+            android:textSize="16sp" />
+
+        <NumberPicker
+            android:id="@+id/DaysPicker"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/FDMonthsPeriodText"></NumberPicker>
+
+        <TextView
+            android:id="@+id/FDDaysText"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/DaysPicker"
+            android:gravity="center"
+            android:text="Day(s)"
+            android:textAlignment="gravity"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/FDROI"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/FDPeriod">
+
+        <EditText
+            android:id="@+id/ROIInput"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:hint="ROI"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/ROIInput"
+            android:textAlignment="gravity"
+            android:gravity="center_vertical"
+            android:text="%"
+            android:textSize="18dp"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/FDStartDate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/FDROI"
+        android:text="FD Start Date"
+        android:onClick="showDatePickerDialog"/>
+
+    <TextView
+        android:id="@+id/FillerText1"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/FDROI"
+        android:textAlignment="gravity"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/FDStartDate"
+        android:text="--"
+        android:textSize="16sp"
+        />
+
+    <Button
+        android:id="@+id/FDEndDate"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="FD End Date"
+        android:layout_below="@id/FDROI"
+        android:layout_toRightOf="@+id/FillerText1"
+        android:onClick="showDatePickerDialog"/>
+
+    <EditText
+        android:id="@+id/FDNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/FDEndDate"
+        android:inputType="text"
+        android:hint="FD Number"
+        android:contentDescription="Account Holder Name"/>
+
+    <EditText
+        android:id="@+id/AssociatedAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/FDNumber"
+        android:inputType="text"
+        android:hint="Account Number (optional)"
+        android:contentDescription="Account Holder Name"/>
+</RelativeLayout>

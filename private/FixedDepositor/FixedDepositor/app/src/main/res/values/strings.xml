@@ -1,0 +1,216 @@
+<resources>
+    <string name="app_name">FixedDepositor</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_activity_add_fdpage">AddFDPage</string>
+    <string-array name="banks">
+        <item>Abcd</item>
+        <item> State Bank of India </item>
+        <item> State Bank of Patiala </item>
+        <item> State Bank of Mysore </item>
+        <item> State Bank of Travancore </item>
+        <item> State Bank of Bikaner and Jaipur </item>
+        <item> State Bank of Hyderabad </item>
+        <item> Allahabad Bank </item>
+        <item> Andhra Bank </item>
+        <item> Bank of Baroda </item>
+        <item> Bank of India </item>
+        <item> Bank of Maharashtra </item>
+        <item> Canara Bank </item>
+        <item> Central Bank of India </item>
+        <item> Corporation Bank </item>
+        <item> Dena Bank </item>
+        <item> Indian Bank </item>
+        <item> Indian Overseas Bank </item>
+        <item> Oriental Bank of Commerce </item>
+        <item> Punjab &amp; Sind Bank </item>
+        <item> Punjab National Bank </item>
+        <item> Syndicate Bank </item>
+        <item> UCO Bank </item>
+        <item> Union Bank of India </item>
+        <item> United Bank of India </item>
+        <item> Vijaya Bank </item>
+        <item> IDBI Bank </item>
+        <item> Bharatiya Mahila Bank </item>
+        <item> AB Bank Ltd. </item>
+        <item> ABN-AMRO Bank N.V </item>
+        <item> Abu Dhabi Commercial Bank Ltd. </item>
+        <item> American Express Banking Corp. </item>
+        <item> Antwerp Diamond Bank NV </item>
+        <item> BNP Paribas </item>
+        <item> Bank of America N.T. &amp; S.A. </item>
+        <item> Bank of Bahrain &amp; Kuwait B.S.C </item>
+        <item> Bank of CeylonBank of Nova Scotia </item>
+        <item> Barclays Bank PLC </item>
+        <item> Calyon Bank </item>
+        <item> Chinatrust </item>
+        <item> Citibank </item>
+        <item> Deutsche Bank </item>
+        <item> DBS Bank Ltd. </item>
+        <item> HSBC </item>
+        <item> Barclays Bank </item>
+        <item> Standard Chartered Bank </item>
+        <item> Royal Bank of Scotland </item>
+        <item> J.P. Morgan Chase Bank </item>
+        <item> American Express </item>
+        <item> Bank of America </item>
+        <item> HDFC Bank </item>
+        <item> Axis Bank </item>
+        <item> Bank of Bahrain and Kuwait </item>
+        <item> Bank of Baroda - Corporate Banking </item>
+        <item> Bank of Baroda - Retail Banking </item>
+        <item> City Union Bank </item>
+        <item> Development Credit Bank </item>
+        <item> Dhanlaxmi Bank </item>
+        <item> Federal Bank </item>
+        <item> ICICI Bank </item>
+        <item> IndusInd Bank </item>
+        <item> ING Vysya Bank </item>
+        <item> Jammu and Kashmir Bank </item>
+        <item> Karnataka Bank Ltd </item>
+        <item> Karur Vysya Bank </item>
+        <item> Kotak Bank </item>
+        <item> Laxmi Vilas Bank </item>
+        <item> Punjab National Bank - Corporate Banking </item>
+        <item> Punjab National Bank - Retail Banking </item>
+        <item> Shamrao Vitthal Co-operative Bank </item>
+        <item> South Indian Bank </item>
+        <item> State Bank of Bikaner &amp; Jaipur </item>
+        <item> Tamilnad Mercantile Bank Ltd. </item>
+        <item> Yes Bank Ltd </item>
+        <item> ABHYUDAYA CO-OP BANK LTD </item>
+        <item> ABU DHABI COMMERCIAL BANK </item>
+        <item> AKOLA DISTRICT CENTRAL CO-OPERATIVE BANK </item>
+        <item> AKOLA JANATA COMMERCIAL COOPERATIVE BANK </item>
+        <item> ALMORA URBAN CO-OPERATIVE BANK LTD. </item>
+        <item> ANDHRA PRAGATHI GRAMEENA BANK </item>
+        <item> APNA SAHAKARI BANK LTD </item>
+        <item> AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED. </item>
+        <item> BANK INTERNASIONAL INDONESIA </item>
+        <item> BANK OF CEYLON </item>
+        <item> BANK OF TOKYO-MITSUBISHI UFJ LTD. </item>
+        <item> BASSEIN CATHOLIC CO-OP BANK LTD </item>
+        <item> BHARATIYA MAHILA BANK LIMITED </item>
+        <item> CAPITAL LOCAL AREA BANK LTD. </item>
+        <item> CATHOLIC SYRIAN BANK LTD. </item>
+        <item> CHINATRUST COMMERCIAL BANK </item>
+        <item> CITIBANK NA </item>
+        <item> CITIZENCREDIT CO-OPERATIVE BANK LTD </item>
+        <item> CITY UNION BANK LTD </item>
+        <item> COMMONWEALTH BANK OF AUSTRALIA </item>
+        <item> CREDIT SUISSE AG </item>
+        <item> DBS BANK LTD </item>
+        <item> DEUTSCHE SECURITIES INDIA PRIVATE LIMITED </item>
+        <item> DEVELOPMENT CREDIT BANK LIMITED </item>
+        <item> DHANLAXMI BANK LTD </item>
+        <item> DICGC </item>
+        <item> DOMBIVLI NAGARI SAHAKARI BANK LIMITED </item>
+        <item> FIRSTRAND BANK LIMITED </item>
+        <item> GOPINATH PATIL PARSIK JANATA SAHAKARI BANK LTD </item>
+        <item> GURGAON GRAMIN BANK </item>
+        <item> HDFC BANK LTD </item>
+        <item> ICICI BANK LTD </item>
+        <item> IDBI BANK LTD </item>
+        <item> IDRBT </item>
+        <item> INDUSIND BANK LTD </item>
+        <item> INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED </item>
+        <item> ING VYSYA BANK LTD </item>
+        <item> JALGAON JANATA SAHKARI BANK LTD </item>
+        <item> JANAKALYAN SAHAKARI BANK LTD </item>
+        <item> JANASEVA SAHAKARI BANK (BORIVLI) LTD </item>
+        <item> JANASEVA SAHAKARI BANK LTD. PUNE </item>
+        <item> JANATA SAHAKARI BANK LTD (PUNE) </item>
+        <item> JPMORGAN CHASE BANK N.A </item>
+        <item> KALLAPPANNA AWADE ICH JANATA S BANK </item>
+        <item> KAPOL CO OP BANK </item>
+        <item> KARNATAKA VIKAS GRAMEENA BANK </item>
+        <item> KOTAK MAHINDRA BANK </item>
+        <item> KURMANCHAL NAGAR SAHKARI BANK LTD </item>
+        <item> MAHANAGAR CO-OP BANK LTD </item>
+        <item> MAHARASHTRA STATE CO OPERATIVE BANK </item>
+        <item> MASHREQBANK PSC </item>
+        <item> MIZUHO CORPORATE BANK LTD </item>
+        <item> MUMBAI DISTRICT CENTRAL CO-OP. BANK LTD. </item>
+        <item> NAGPUR NAGRIK SAHAKARI BANK LTD </item>
+        <item> NATIONAL AUSTRALIA BANK </item>
+        <item> NEW INDIA CO-OPERATIVE BANK LTD. </item>
+        <item> NKGSB CO-OP BANK LTD </item>
+        <item> NORTH MALABAR GRAMIN BANK </item>
+        <item> NUTAN NAGARIK SAHAKARI BANK LTD </item>
+        <item> OMAN INTERNATIONAL BANK SAOG </item>
+        <item> PARSIK JANATA SAHAKARI BANK LTD </item>
+        <item> PRATHAMA BANK </item>
+        <item> PRIME CO OPERATIVE BANK LTD </item>
+        <item> PUNJAB AND MAHARASHTRA CO-OP BANK LTD. </item>
+        <item> PUNJAB AND SIND BANK </item>
+        <item> RABOBANK INTERNATIONAL (CCRB) </item>
+        <item> RAJGURUNAGAR SAHAKARI BANK LTD. </item>
+        <item> RAJKOT NAGARIK SAHAKARI BANK LTD </item>
+        <item> RESERVE BANK OF INDIA </item>
+        <item> SBERBANK </item>
+        <item> SHINHAN BANK </item>
+        <item> SHRI CHHATRAPATI RAJARSHI SHAHU URBAN CO-OP BANK LTD </item>
+        <item> SOCIETE GENERALE </item>
+        <item> SOLAPUR JANATA SAHKARI BANK LTD.SOLAPUR </item>
+        <item> STATE BANK OF MAURITIUS LTD </item>
+        <item> SUMITOMO MITSUI BANKING CORPORATION </item>
+        <item> TAMILNAD MERCANTILE BANK LTD </item>
+        <item> THANE BHARAT SAHAKARI BANK LTD </item>
+        <item> THE A.P. MAHESH CO-OP URBAN BANK LTD. </item>
+        <item> THE AHMEDABAD MERCANTILE CO-OPERATIVE BANK LTD. </item>
+        <item> THE ANDHRA PRADESH STATE COOP BANK LTD </item>
+        <item> THE BANK OF NOVA SCOTIA </item>
+        <item> THE BANK OF RAJASTHAN LTD </item>
+        <item> THE BHARAT CO-OPERATIVE BANK (MUMBAI) LTD </item>
+        <item> THE COSMOS CO-OPERATIVE BANK LTD. </item>
+        <item> THE DELHI STATE COOPERATIVE BANK LTD. </item>
+        <item> THE FEDERAL BANK LTD </item>
+        <item> THE GADCHIROLI DISTRICT CENTRAL COOPERATIVE BANK LTD </item>
+        <item> THE GREATER BOMBAY CO-OP. BANK LTD </item>
+        <item> THE GUJARAT STATE CO-OPERATIVE BANK LTD </item>
+        <item> THE JALGAON PEOPLES CO-OP BANK </item>
+        <item> THE JAMMU AND KASHMIR BANK LTD </item>
+        <item> THE KALUPUR COMMERCIAL CO. OP. BANK LTD. </item>
+        <item> THE KALYAN JANATA SAHAKARI BANK LTD. </item>
+        <item> THE KANGRA CENTRAL CO-OPERATIVE BANK LTD </item>
+        <item> THE KANGRA COOPERATIVE BANK LTD </item>
+        <item> THE KARAD URBAN CO-OP BANK LTD </item>
+        <item> THE KARNATAKA STATE APEX COOP. BANK LTD. </item>
+        <item> THE LAKSHMI VILAS BANK LTD </item>
+        <item> THE MEHSANA URBAN COOPERATIVE BANK LTD </item>
+        <item> THE MUNICIPAL CO OPERATIVE BANK LTD MUMBAI </item>
+        <item> THE NAINITAL BANK LIMITED </item>
+        <item> THE NASIK MERCHANTS CO-OP BANK LTD., NASHIK </item>
+        <item> THE RAJASTHAN STATE COOPERATIVE BANK LTD. </item>
+        <item> THE RATNAKAR BANK LTD </item>
+        <item> THE ROYAL BANK OF SCOTLAND N.V </item>
+        <item> THE SAHEBRAO DESHMUKH CO-OP. BANK LTD. </item>
+        <item> THE SARASWAT CO-OPERATIVE BANK LTD </item>
+        <item> THE SEVA VIKAS CO-OPERATIVE BANK LTD (SVB) </item>
+        <item> THE SHAMRAO VITHAL CO-OPERATIVE BANK LTD </item>
+        <item> THE SURAT DISTRICT CO OPERATIVE BANK LTD. </item>
+        <item> THE SURAT PEOPLES CO-OP BANK LTD </item>
+        <item> THE SUTEX CO.OP. BANK LTD. </item>
+        <item> THE TAMILNADU STATE APEX COOPERATIVE BANK LIMITED </item>
+        <item> THE THANE DISTRICT CENTRAL CO-OP BANK LTD </item>
+        <item> THE THANE JANATA SAHAKARI BANK LTD </item>
+        <item> THE VARACHHA CO-OP. BANK LTD. </item>
+        <item> THE VISHWESHWAR SAHAKARI BANK LTD.,PUNE </item>
+        <item> THE WEST BENGAL STATE COOPERATIVE BANK LTD </item>
+        <item> TJSB SAHAKARI BANK LTD. </item>
+        <item> TUMKUR GRAIN MERCHANTS COOPERATIVE BANK LTD., </item>
+        <item> UBS AG </item>
+        <item> UNITED OVERSEAS BANK </item>
+        <item> VASAI VIKAS SAHAKARI BANK LTD. </item>
+        <item> WEST BENGAL STATE COOPERATIVE BANK </item>
+        <item> WESTPAC BANKING CORPORATION </item>
+        <item> WOORI BANK </item>
+        <item> ZILA SAHKARI BANK LTD GHAZIABAD </item>
+    </string-array>
+    <string name="bankImages">
+        {\"State Bank of India\":\"http://logonoid.com/images/state-bank-of-india-logo.png\",\"State Bank of Patiala\":\"http://www.bankpoclerk.com/community/images/State-Bank-Patiala-logo.jpg\",\"State Bank of Mysore\":\"http://www.moneycontrol.com/news_image_files/statebankof_mysore_190.jpg\",\"State Bank of Travancore\":\"http://logos-vector.com/images/logo/xxl/5/8/1/58167/State_Bank_of_Travancore_9da46_450x450.png\",\"State Bank of Bikaner and Jaipur\":\"http://www.mysarkarinaukri.com/files/images/header_8.jpg\",\"State Bank of Hyderabad\":\"http://www.logoeps.com/wp-content/uploads/2014/01/state-bank-of-hyderabad-vector-logo.png\",\"Allahabad Bank\":\"https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Allahabad_Bank_Logo.svg/800px-Allahabad_Bank_Logo.svg.png\",\"Andhra Bank\":\"http://www.ranklogos.com/wp-content/uploads/2014/09/andhra-bank.jpg\",\"Bank of Baroda\":\"http://www.hottrendsindia.com/wp-content/uploads/2012/03/Bank-of-baroda.jpg\",\"Bank of India\":\"http://cdn.marketplaceimages.windowsphone.com/v8/images/992e8b23-fa96-4d7a-8c4b-dd92aa0ab67a?imageType=ws_icon_large\",\"Bank of Maharashtra\":\"http://www.improvemyenglish.in/images/bom.gif\",\"Canara Bank\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Canara_Bank_Logo.svg/1280px-Canara_Bank_Logo.svg.png\",\"Central Bank of India\":\"http://3.bp.blogspot.com/-JroAi612Tig/UJqJzSFpF5I/AAAAAAAAAeg/TfkMlcbJfa8/s1600/Central+Bank+of+India.jpg\",\"Corporation Bank\":\"https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Corporation_Bank_Logo.svg/1280px-Corporation_Bank_Logo.svg.png\",\"Dena Bank\":\"http://www.recruitmentmirror.com/wp-content/uploads/2012/09/Dena-Bank-Logo.gif\",\"Indian Bank\":\"https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Indian_Bank_Logo.svg/1280px-Indian_Bank_Logo.svg.png\",\"Indian Overseas Bank\":\"http://www.gandhinagarportal.com/wp-content/uploads/2011/05/logoindianoverseasbank.jpg\",\"Oriental Bank of Commerce\":\"http://49b5af5c747982f45fd7-dec8f175b0901987f30693abc46dc353.r35.cf2.rackcdn.com/icon/13/04/22/mzl.qdurtgwg.png\",\"Punjab &amp; Sind Bank\":\"http://www.ranklogos.com/wp-content/uploads/2014/09/Punjab-Sind-Bank.png\",\"Punjab National Bank\":\"http://www.idc.iitb.ac.in/dsource/sites/default/files/gallery/126/8.jpg\",\"Syndicate Bank\":\"http://2.bp.blogspot.com/-enBT6Rpss3g/Txv_FeuHD3I/AAAAAAAAAFA/wgBfQprv8n0/s1600/SyndicateBank-Logo3.jpg\",\"UCO Bank\":\"http://1.bp.blogspot.com/-ZGvbkk2OTUU/UFY8Dgv3x6I/AAAAAAAAAUc/aBEABuwyaHA/s1600/UCO.jpg\",\"Union Bank of India\":\"http://i0.wp.com/stuffled.com/vector/wp-content/uploads/sites/5/2014/07/Union-Bank-of-India-Logo-EPS-vector-image.png?fit=1020%2C680\",\"United Bank of India\":\"http://upload.wikimedia.org/wikipedia/en/thumb/8/85/United_Bank_of_India_SVG_Logo.svg/793px-United_Bank_of_India_SVG_Logo.svg.png\",\"Vijaya Bank\":\"http://upload.wikimedia.org/wikipedia/en/thumb/7/70/Vijaya_Bank.svg/545px-Vijaya_Bank.svg.png\",\"IDBI Bank\":\"http://1.bp.blogspot.com/-FeRn2GYav34/TuwCY18bwPI/AAAAAAAADxE/mIhFAq21LGU/s1600/idbi_bank_logo2.png\",\"Bharatiya Mahila Bank\":\"http://newsofbank.com/wp-content/uploads/2014/07/Bharatiya-Mahila-Bank-logo-520x245.jpg\",\"AB Bank Ltd.\":\"http://www.logotypes101.com/logos/41/7D151EA263209E74AB3F3FD9F465A161/ab_bank.png\",\"ABN-AMRO Bank N.V\":\"http://www.logoeps.com/wp-content/uploads/2012/06/abn-amro-logo-vector-01.png\",\"Abu Dhabi Commercial Bank Ltd.\":\"http://www.cityofarabiame.com/wp-content/files/Image/spotlight-finance-adcb.jpg\",\"American Express Banking Corp.\":\"http://logok.org/wp-content/uploads/2014/09/American-Express-logo.png\",\"Antwerp Diamond Bank NV\":\"http://betterdiamondinitiative.org/wp-content/uploads/2014/10/antwerp-diamond-bank-nv.jpg\",\"BNP Paribas\":\"http://upload.wikimedia.org/wikipedia/fr/0/09/Logo_BNP_Paribas.jpg\",\"Bank of America N.T. &amp; S.A.\":\"http://4.bp.blogspot.com/-Wy4eHgQ6nwo/UQRgcz0-P5I/AAAAAAADo-A/DPxgypKvn7E/s1600/Bank_of_America_Logo17.jpg\",\"Bank of Bahrain &amp; Kuwait B.S.C\":\"http://www.cpifinancial.net/images/directory/companies/68/BBK.jpg\",\"Bank of CeylonBank of Nova Scotia\":\"https://www.numisbids.com/sales/hosted/londoncoins/153/thumb00916.jpg\",\"Barclays Bank PLC\":\"http://a5.mzstatic.com/us/r30/Purple/v4/90/84/c9/9084c90c-5d35-dc60-49c9-e1e41612aaff/mzl.mzfhcwhr.png\",\"Calyon Bank\":\"http://seeklogo.com/images/C/Calyon-logo-72B1CEDE27-seeklogo.com.gif\",\"Chinatrust\":\"http://www.orientaltravel.com/hotelimage/Ilan_Chinatrust01.jpg\",\"Citibank\":\"http://i1-news.softpedia-static.com/images/news2/Citibank-Admits-iPad-App-Overcharged-Users-2.jpg\",\"Deutsche Bank\":\"http://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Deutsche_Bank_logo_without_wordmark.svg/1024px-Deutsche_Bank_logo_without_wordmark.svg.png\",\"DBS Bank Ltd.\":\"http://www.blissfulthots.com/wp-content/uploads/2012/03/DBS_logo.jpg\",\"HSBC\":\"http://cmlab.csie.ntu.edu.tw/~felixc977/myWeb/Icon_Hsbc.gif\",\"Barclays Bank\":\"http://4.bp.blogspot.com/_48CxvVdO5_A/S7HEL0Q1SnI/AAAAAAAAAMQ/8xNU3nJNq0o/s1600/logo+barclays.jpg\",\"Standard Chartered Bank\":\"http://upload.wikimedia.org/wikipedia/de/thumb/5/51/Standard_Chartered_Bank_logo.svg/1024px-Standard_Chartered_Bank_logo.svg.png\",\"Royal Bank of Scotland\":\"http://www.thedrum.com/uploads/drum_basic_article/83311/main_images/rbs-logo.jpg\",\"J.P. Morgan Chase Bank\":\"http://www.expectad.com/blogos/images/011_jpmorganchase.jpg\",\"American Express\":\"http://www.inmotionhosting.com/support/images/stories/icons/ecommerce/american-express.png\",\"Bank of America\":\"http://1.bp.blogspot.com/-Z3HLVym5QOQ/UQRglnrY3uI/AAAAAAADpAw/pKwIwVvwvow/s1600/Bank_of_America_Logo5.jpg\",\"HDFC Bank\":\"http://2.bp.blogspot.com/-wCOghQprW9E/T1jQZK4ESbI/AAAAAAAAAGA/TeNMXzOchYw/s1600/HDFC_Bank_Logo.jpg\",\"Axis Bank\":\"http://1.bp.blogspot.com/-T05jkHNuAmI/T41pnCTQuLI/AAAAAAAA2HE/Wd5f0PlHcmY/s1600/Axis-Bank-Logo.jpg\",\"Bank of Bahrain and Kuwait\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Bank_of_Bahrain_and_Kuwait.svg/1280px-Bank_of_Bahrain_and_Kuwait.svg.png\",\"Bank of Baroda - Corporate Banking\":\"http://cdn.marketplaceimages.windowsphone.com/v8/images/71b1f4f3-118c-4256-b2ce-b1518207370b?imageType=ws_icon_large\",\"Bank of Baroda - Retail Banking\":\"http://cdn.marketplaceimages.windowsphone.com/v8/images/71b1f4f3-118c-4256-b2ce-b1518207370b?imageType=ws_icon_large\",\"City Union Bank\":\"http://www.cityunionbank.com/images/Homepage_04.jpg\",\"Development Credit Bank\":\"https://s3-ap-southeast-1.amazonaws.com/akosha/static/images/company_logo/akosha_development_credit_bank_limited.jpg\",\"Dhanlaxmi Bank\":\"https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Dhanlaxmi_Bank.svg/1280px-Dhanlaxmi_Bank.svg.png\",\"Federal Bank\":\"http://www.motachashma.com/images/Federal-bank-logo.jpg\",\"ICICI Bank\":\"http://www.saniyaholidays.com/wp-content/uploads/2012/12/ICICI-Logo.jpg\",\"IndusInd Bank\":\"http://www.stockmarkethelpers.com/stockcontrol/home_page_icons/1341977668_IndusInd_Bank_300.jpg\",\"ING Vysya Bank\":\"http://www.rajahmundry.me/Rajamahendravaram/uploads/20120620031227-448149046-1.jpg\",\"Jammu and Kashmir Bank\":\"http://upload.wikimedia.org/wikipedia/en/thumb/1/12/Jammu_%26_Kashmir_Bank_Logo.svg/250px-Jammu_%26_Kashmir_Bank_Logo.svg.png\",\"Karnataka Bank Ltd\":\"http://www.inmysore.com/images/sobipro/entries/543/icon_karnataka_logo.jpg\",\"Karur Vysya Bank\":\"http://www.ranklogos.com/wp-content/uploads/2014/09/Karur-Vysya-Bank.png\",\"Kotak Bank\":\"http://satishkakriconsultants.com/logo/Kotak-mahindra-bank-logo.png\",\"Laxmi Vilas Bank\":\"http://www.jobsplane.com/wp-content/uploads/2016/02/Lakshmi-Vilas-Bank-logo-.png\",\"Punjab National Bank - Corporate Banking\":\"http://cdn.marketplaceimages.windowsphone.com/v8/images/e54b8d94-26a4-413b-97b4-20d7e7d27e7c?imageType=ws_icon_large\",\"Punjab National Bank - Retail Banking\":\"http://allaboutwindowsphone.com/images/appicons/257343.png\",\"Shamrao Vitthal Co-operative Bank\":\"http://www.indiantelevision.com/sites/drupal7.indiantelevision.co.in/files/images/mam-images/2014/06/23/svc_bank.jpg\",\"South Indian Bank\":\"http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/South_Indian_Bank_Logo.svg/800px-South_Indian_Bank_Logo.svg.png\",\"State Bank of Bikaner &amp; Jaipur\":\"http://www.mysarkarinaukri.com/files/images/header_8.jpg\",\"Tamilnad Mercantile Bank Ltd.\":\"http://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Tamilnad_Mercantile_Bank_Limited_old_Logo.svg/626px-Tamilnad_Mercantile_Bank_Limited_old_Logo.svg.png\",\"Yes Bank Ltd\":\"https://media.glassdoor.com/sqll/218226/yes-bank-squarelogo.png\",\"ABHYUDAYA CO-OP BANK LTD\":\"http://freejobalert24.com/wp-content/uploads/2013/10/Abhyudaya-Co-Operative-Bank-Logo.jpg\",\"ABU DHABI COMMERCIAL BANK\":\"http://www.mallfinder.ae/wp-content/uploads/2013/10/Abu-Dhabi-Commercial-Bank-logo.jpg\",\"AKOLA DISTRICT CENTRAL CO-OPERATIVE BANK\":\"http://i.ytimg.com/vi/wnZnuzbPamM/0.jpg\",\"AKOLA JANATA COMMERCIAL COOPERATIVE BANK\":\"http://bankifsccodes.org/img/logo.png\",\"ALMORA URBAN CO-OPERATIVE BANK LTD.\":\"http://almoraurbanbank.com/writereaddata/PhotoGallery/Almora%20Urban%20Co-Operative%20Bank%20Ltd/19/Big/19.jpg\",\"ANDHRA PRAGATHI GRAMEENA BANK\":\"http://www.bankingawareness.com/wp-content/uploads/2013/01/Andhra-Pragathi-Grameena-Bank-APGB.gif\",\"APNA SAHAKARI BANK LTD\":\"http://management.ind.in/img/j/Apna-Sahakari-Bank-Malad-Branch-1.jpg\",\"AUSTRALIA AND NEW ZEALAND BANKING GROUP LIMITED.\":\"http://www.internationalfinancemagazine.com/styles/image/award_page/Australia/ANZ.jpg\",\"BANK INTERNASIONAL INDONESIA\":\"http://www.ranklogos.com/wp-content/uploads/2014/09/Bank-Internasional-Indonesia-logo.png\",\"BANK OF CEYLON\":\"https://upload.wikimedia.org/wikipedia/en/thumb/1/1e/Bank_of_Ceylon.svg/1024px-Bank_of_Ceylon.svg.png\",\"BANK OF TOKYO-MITSUBISHI UFJ LTD.\":\"http://www.mmbiztoday.com/sites/mmbiztoday.com/files/styles/artile_per_image_large/public/field/image/MUFG%20BTMU%20mitusbishi%20tokyo%20ufj%202.jpg?itok=OJbsa9MN\",\"BASSEIN CATHOLIC CO-OP BANK LTD\":\"http://fincoreazurews2.cloudapp.net/FINACUSWEB/Uploads/Clients/ThumbNailImage/Bassein-Catholic-Co-op-Bank_home.png\",\"BHARATIYA MAHILA BANK LIMITED\":\"http://www.jobsplane.com/wp-content/uploads/2016/02/Bharatiya-Mahila-Bank-logo1.jpg\",\"CAPITAL LOCAL AREA BANK LTD.\":\"http://acumentechnologies.co.in/images/clients/Capital-Local-Area-Bank.jpg\",\"CATHOLIC SYRIAN BANK LTD.\":\"http://www.aifcapital.com/en/wp-content/uploads/catholic-syrian-bank-logo.jpg\",\"CHINATRUST COMMERCIAL BANK\":\"http://www.communitybusiness.org/images/logo/Chinatrust_small.jpg\",\"CITIBANK NA\":\"http://assets.fontsinuse.com/static/use-media-items/16/15727/full-1024x1024/528bfd41/citibank_twitter_profile_icon_v04.png\",\"CITIZENCREDIT CO-OPERATIVE BANK LTD\":\"http://paperads.timesascent.com/epaper/output/2013/04/30/ETM/Images/ETM201304301Ad00605.png\",\"CITY UNION BANK LTD\":\"http://www.cityunionbank.com/images/Homepage_04.jpg\",\"COMMONWEALTH BANK OF AUSTRALIA\":\"http://4.bp.blogspot.com/-Sdty7KolsiY/UMacfsGnaXI/AAAAAAAAIA4/OQO9Kj6NEFA/s1600/commonwealth-bank-of-australia-logo%2B(1).jpg\",\"CREDIT SUISSE AG\":\"http://4.bp.blogspot.com/-RBTEn4kUk14/T1TErFPpS8I/AAAAAAAAv0o/DyA6BHHZSo4/s1600/Credit-Suisse-Logo-Photos.jpg\",\"DBS BANK LTD\":\"http://www.blissfulthots.com/wp-content/uploads/2012/03/DBS_logo.jpg\",\"DEUTSCHE SECURITIES INDIA PRIVATE LIMITED\":\"http://www.maainfra.co.in/images/s_icon/fbicon3.png\",\"DEVELOPMENT CREDIT BANK LIMITED\":\"https://s3-ap-southeast-1.amazonaws.com/akosha/static/images/company_logo/akosha_development_credit_bank_limited.jpg\",\"DHANLAXMI BANK LTD\":\"http://www.moneyvriksh.com/blog/wp-content/uploads/2010/07/hdfc_fd_rate.gif\",\"DICGC\":\"http://www.dicgc.org.in/English/images/logobg.jpg\",\"DOMBIVLI NAGARI SAHAKARI BANK LIMITED\":\"http://www.bankpoclerk.com/community/images/DNS-bank-logo.jpg\",\"FIRSTRAND BANK LIMITED\":\"http://www.business-standard.com/newsimgfiles/image/firstrand-ltd.jpg\",\"GOPINATH PATIL PARSIK JANATA SAHAKARI BANK LTD\":\"http://2.bp.blogspot.com/-rqUn4_Sg9bo/VQQBxAnIdUI/AAAAAAAABks/bPOlItElgXc/s1600/Parsik%2BJanata%2BSahakari%2BBank%2BCustomer%2BHelp%2BLine%2BWebsite%2BEmail.jpg\",\"GURGAON GRAMIN BANK\":\"http://files.propertywala.com/photos/7d/J811905129.retail-space-first-floor.1583997l.jpg\",\"HDFC BANK LTD\":\"https://res.cloudinary.com/money-mantra/image/upload/icon/hdfc_bank.png\",\"ICICI BANK LTD\":\"https://apkupdate.com/images/cover/com.icicibank.eftcheques.png\",\"IDBI BANK LTD\":\"http://1.bp.blogspot.com/_AcBUSVxs82w/TTbN6zE9ahI/AAAAAAAAklY/MIL6Ay4hjfU/s320/IDBI_Bank_Logo.jpg\",\"IDRBT\":\"http://image.slidesharecdn.com/finalreport2-130803124633-phpapp01/95/idrbt-project-application-development-in-java-for-public-key-cryptography-1-638.jpg?cb=1375534164\",\"INDUSIND BANK LTD\":\"http://www.stockmarkethelpers.com/stockcontrol/home_page_icons/1341977668_IndusInd_Bank_300.jpg\",\"INDUSTRIAL AND COMMERCIAL BANK OF CHINA LIMITED\":\"http://www.bloomberg.com/image/iu_vZCf9ISQA.jpg\",\"ING VYSYA BANK LTD\":\"http://image.slidesharecdn.com/pptingvysyabank-121103020556-phpapp02/95/slide-1-638.jpg?cb=1351926450\",\"JALGAON JANATA SAHKARI BANK LTD\":\"http://www.bankpoclerk.com/community/images/Jalgaon-Janata-Bank-Logo.jpg\",\"JANAKALYAN SAHAKARI BANK LTD\":\"http://management.ind.in/img/p/Janakalyan-Sahakari-Bank-Ltd-Sahar-Branch.jpg\",\"JANASEVA SAHAKARI BANK (BORIVLI) LTD\":\"http://management.ind.in/img/n/Janaseva-Sahakari-Bank-Ltd-Mumbai.jpg\",\"JANASEVA SAHAKARI BANK LTD. PUNE\":\"http://management.ind.in/img/j/Janaseva-Sahakari-Bank-Market-Yard-Pune.jpg\",\"JANATA SAHAKARI BANK LTD (PUNE)\":\"http://cdn.staticmb.com/mbimages/locality/171477/Janata-Sahakari-Bank-0-Talegaon-Dabhade-Pune.jpg\",\"JPMORGAN CHASE BANK N.A\":\"http://img.docstoccdn.com/thumb/orig/3420373.png\",\"KALLAPPANNA AWADE ICH JANATA S BANK\":\"http://www.valuersindia.in/logo/the-kunbi-sahakari-bank-ltd.jpg\",\"KAPOL CO OP BANK\":\"http://www.antya.com/upload/9/Kapol-Co-operative-Bank-Logo.jpg\",\"KARNATAKA VIKAS GRAMEENA BANK\":\"http://1.bp.blogspot.com/-EjG6gxwtDUU/TleW0WOJNbI/AAAAAAAAAgA/tH09SJzOZhE/s1600/kvgb+logo.gif\",\"KOTAK MAHINDRA BANK\":\"http://satishkakriconsultants.com/logo/Kotak-mahindra-bank-logo.png\",\"KURMANCHAL NAGAR SAHKARI BANK LTD\":\"http://www.loginbazaar.in/img/ShopeImages/CONTACT-%2001382-%20229975Almora%20Urban%20Co-Operative%20Bank%20LTD%20Kotdwar1almo.jpg\",\"MAHANAGAR CO-OP BANK LTD\":\"http://www.bankpoclerk.com/community/images/Mahanagar-Co-opt-Bank.jpg\",\"MAHARASHTRA STATE CO OPERATIVE BANK\":\"http://management.ind.in/img/p/Maharashtra-State-Urban-Co-Operative-Banks-Association.jpg\",\"MASHREQBANK PSC\":\"http://topnews.ae/images/imagecache/bigthumb/Mashreq-bank_0.jpg\",\"MIZUHO CORPORATE BANK LTD\":\"http://www.kenyarep-jp.com/jam2015/Mizuho-logo.gif\",\"MUMBAI DISTRICT CENTRAL CO-OP. BANK LTD.\":\"https://c1.staticflickr.com/3/2747/4196499845_d8c9cb7690_z.jpg\",\"NAGPUR NAGRIK SAHAKARI BANK LTD\":\"http://jobsreporter.in/wp-content/uploads/2015/03/Rajkot-Nagarik-Sahakari-Bank-logo.jpg\",\"NATIONAL AUSTRALIA BANK\":\"http://www.vectorfans.com/wp-content/uploads/2013/10/National-Australia-Bank-Logo.jpg\",\"NEW INDIA CO-OPERATIVE BANK LTD.\":\"http://www.customercarenumber.co.in/wp-content/uploads/2013/01/New-India-Bank.jpg\",\"NKGSB CO-OP BANK LTD\":\"http://www.sarkari-naukri.in/wp-content/uploads/2011/08/NKGSB-Bank.jpg\",\"NORTH MALABAR GRAMIN BANK\":\"http://4.bp.blogspot.com/-_hLyJfKvHHk/TcK7YVJ79mI/AAAAAAAAAaY/-Y2SpPxme90/s1600/nmg+logo.jpg\",\"NUTAN NAGARIK SAHAKARI BANK LTD\":\"http://management.ind.in/img/q/Nutan-Nagarik-Sahakari-Bank-Ltd.-Login-Retail.jpg\",\"OMAN INTERNATIONAL BANK SAOG\":\"http://www.bankmuscatsa.com/uploads/images/BM%20Logo%2030.jpg\",\"PARSIK JANATA SAHAKARI BANK LTD\":\"http://www.searchindia.info/Ifsc/images/logo/parsik-janata-sahakari-bank-ltd.gif\",\"PRATHAMA BANK\":\"http://www.bankingawareness.com/wp-content/uploads/2012/12/Prathama-Bank-Logo.gif\",\"PRIME CO OPERATIVE BANK LTD\":\"https://pbs.twimg.com/profile_images/453804704795865088/G73PrHGs.jpeg\",\"PUNJAB AND MAHARASHTRA CO-OP BANK LTD.\":\"http://1343372640.rsc.cdn77.org/blogs/wp-content/uploads/2016/05/02122248/Punjab-Maharashtra-Co-operative-Bank-Recruitment.jpg\",\"PUNJAB AND SIND BANK\":\"http://www.ranklogos.com/wp-content/uploads/2014/09/Punjab-Sind-Bank.png\",\"RABOBANK INTERNATIONAL (CCRB)\":\"http://www.worldteanews.com/wp-content/uploads/LOGO_Rabobank.jpg\",\"RAJGURUNAGAR SAHAKARI BANK LTD.\":\"http://cdn.staticmb.com/mbimages/locality/163772/Rajgurunagar-Sahakari-Bank-0-Chakan-Pune.jpg\",\"RAJKOT NAGARIK SAHAKARI BANK LTD\":\"http://jobslive.in/wp-content/uploads/2013/09/Rajkot-Nagarik-Sahakari-Bank-logo.png\",\"RESERVE BANK OF INDIA\":\"http://topnews.in/files/RBI3.jpg\",\"SBERBANK\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Sberbank_Logo_latin.svg/780px-Sberbank_Logo_latin.svg.png\",\"SHINHAN BANK\":\"http://goodlogo.com/images/logos/shinhan_bank_logo_2792.gif\",\"SOCIETE GENERALE\":\"http://www.andlil.com/wp-content/uploads/2013/05/logo-societe-generale.jpg\",\"SOLAPUR JANATA SAHKARI BANK LTD.SOLAPUR\":\"http://management.ind.in/img/k/Thane-Janata-Sahakari-Bank-Solapur-Branch.jpg\",\"STATE BANK OF MAURITIUS LTD\":\"http://www.mauritiusdelight.com/mauritius/imagecache/thumb/business-and-finance/mauritius-post-and-cooperative-bank-ltd.jpg\",\"SUMITOMO MITSUI BANKING CORPORATION\":\"http://www.ana.co.jp/eng/amc/reference/tameru/other/money/image/smbc_logo_09.gif\",\"TAMILNAD MERCANTILE BANK LTD\":\"http://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Tamilnad_Mercantile_Bank_Limited_old_Logo.svg/626px-Tamilnad_Mercantile_Bank_Limited_old_Logo.svg.png\",\"THANE BHARAT SAHAKARI BANK LTD\":\"http://management.ind.in/img/k/Thane-Janata-Sahakari-Bank-Ltd-IFSC-Code-1.jpg\",\"THE A.P. MAHESH CO-OP URBAN BANK LTD.\":\"http://1.bp.blogspot.com/-g4Ua3PNZbjc/Ubht1t2GkgI/AAAAAAAAAhk/-E_aktkTGlY/s1600/Mahesh+BAnk.png\",\"THE AHMEDABAD MERCANTILE CO-OPERATIVE BANK LTD.\":\"http://2.bp.blogspot.com/-X3YxXLD2x4g/VS82t78-CSI/AAAAAAAAPZs/JSf-Qx-xPdU/s1600/The%2BAhmedabad%2Bmerkantile%2Bbank%2Bco.op.%2Bltd..jpg\",\"THE ANDHRA PRADESH STATE COOP BANK LTD\":\"http://4.bp.blogspot.com/-vhoZeFURq3c/Tmd_M5RHEZI/AAAAAAAAAXs/TEmT_HWQEm4/s400/APCOB.gif\",\"THE BANK OF NOVA SCOTIA\":\"http://www.americanbankingnews.com/logos/the-bank-of-nova-scotia-logo.jpg\",\"THE BANK OF RAJASTHAN LTD\":\"http://image.slidesharecdn.com/mergeroficicibankandbankofrajasthan-140126212042-phpapp01/95/merger-of-icici-bank-and-bank-of-rajasthan-1-638.jpg?cb=1390793425\",\"THE BHARAT CO-OPERATIVE BANK (MUMBAI) LTD\":\"http://tulunadunews.com/images/2013/05/Bharat-Co-Op.-Bank-Mumbai-Limited-52nd-Branch-Inaugurated-at-Mulund-West-03.jpg\",\"THE COSMOS CO-OPERATIVE BANK LTD.\":\"http://www.fresherspot.com/wp-content/uploads/2015/01/cosmo2.jpg\",\"THE DELHI STATE COOPERATIVE BANK LTD.\":\"http://snbansal.com/images/portfolio_images/big/sbi.jpg\",\"THE FEDERAL BANK LTD\":\"http://cdn.marketplaceimages.windowsphone.com/v8/images/15cd1682-f560-44fa-a0fb-7d315fb96a7b?imageType=ws_icon_large\",\"THE GADCHIROLI DISTRICT CENTRAL COOPERATIVE BANK LTD\":\"http://www.indiaforyou.in/banks/banks_hdr2.gif\",\"THE GREATER BOMBAY CO-OP. BANK LTD\":\"http://www.greaterbank.com/images/logo.gif\",\"THE GUJARAT STATE CO-OPERATIVE BANK LTD\":\"http://www.gscbank.co.in/wp-content/uploads/2015/04/final-Rupay.png\",\"THE JALGAON PEOPLES CO-OP BANK\":\"https://simplybanking.files.wordpress.com/2011/05/jalgaon.jpg\",\"THE JAMMU AND KASHMIR BANK LTD\":\"http://upload.wikimedia.org/wikipedia/en/thumb/1/12/Jammu_%26_Kashmir_Bank_Logo.svg/250px-Jammu_%26_Kashmir_Bank_Logo.svg.png\",\"THE KALUPUR COMMERCIAL CO. OP. BANK LTD.\":\"http://studychacha.com/img/o/The-Kalupur-Commercial-Co-Operative-Bank-Ltd-Bareja-1.jpg\",\"THE KALYAN JANATA SAHAKARI BANK LTD.\":\"http://management.ind.in/img/j/The-Kalyan-Janata-Sahakari-Bank-LTD-Kalyan-Thane-Mumbai-1.jpg\",\"THE KANGRA CENTRAL CO-OPERATIVE BANK LTD\":\"http://www.northindiatimes.com/wp-content/uploads/2014/07/Kangra-Co-operative-central-Bank_limited_logo.jpg\",\"THE KANGRA COOPERATIVE BANK LTD\":\"http://www.northindiatimes.com/wp-content/uploads/2014/07/Kangra-Co-operative-central-Bank_limited_logo.jpg\",\"THE KARAD URBAN CO-OP BANK LTD\":\"http://3.bp.blogspot.com/_kRzNtIEwfCc/TQeck_WgxtI/AAAAAAAADgM/hJvuFy-acr0/s1600/Urban+Co-operative+Banks.jpg\",\"THE KARNATAKA STATE APEX COOP. BANK LTD.\":\"http://www.searchindia.info/Ifsc/images/logo/the-karnataka-state-co-operative-apex-bank-ltd.gif\",\"THE LAKSHMI VILAS BANK LTD\":\"http://kikkidu.com/wp-content/uploads/2010/12/lakshmiVilasBank.jpg\",\"THE MEHSANA URBAN COOPERATIVE BANK LTD\":\"http://management.ind.in/img/m/Mehsana-urban-co-op-bank-ltd-branches-1.jpg\",\"THE MUNICIPAL CO OPERATIVE BANK LTD MUMBAI\":\"http://1.bp.blogspot.com/-8RTwosEko0E/VAb8c65-doI/AAAAAAAAERI/7pR3l_qBsgc/s1600/03_09_2014_021_009.jpg\",\"THE NAINITAL BANK LIMITED\":\"http://4.bp.blogspot.com/-EC68xxDKr-E/U6hW9X5o8dI/AAAAAAAAG3k/9zSuunvFjcM/s1600/Nainital+Bank+Limited.jpg\",\"THE NASIK MERCHANTS CO-OP BANK LTD., NASHIK\":\"http://www.indiancooperative.com/wp-content/uploads/2015/11/rbi-350x200.jpg\",\"THE RAJASTHAN STATE COOPERATIVE BANK LTD.\":\"http://news.rajasthandirect.com/wp-content/uploads/2013/09/RSCB-Recruitment.jpg\",\"THE RATNAKAR BANK LTD\":\"http://www.rblbank.com/images/common/rbl-bank-logo.jpg\",\"THE ROYAL BANK OF SCOTLAND N.V\":\"http://www.bankatelefonlari.com/bankalar/the-royal-bank-of-scotland-nv.gif\",\"THE SAHEBRAO DESHMUKH CO-OP. BANK LTD.\":\"http://www.crystalonnet.com/sites/default/files/imagecache/client_page_logo/sdc.gif\",\"THE SARASWAT CO-OPERATIVE BANK LTD\":\"http://3.bp.blogspot.com/-sSdIj4XUXW8/UVO4CbHjZ8I/AAAAAAAAAGw/jV-kn3XjnQ0/s1600/logo1.jpeg\",\"THE SEVA VIKAS CO-OPERATIVE BANK LTD (SVB)\":\"http://www.sevavikasbank.com/img/newimg/Picture2.png\",\"THE SHAMRAO VITHAL CO-OPERATIVE BANK LTD\":\"http://1.bp.blogspot.com/-uaG1M5HXEsM/UoHPW7W2QfI/AAAAAAAAQPM/8jG9XMjT1A0/s1600/Shamrao-Vithal-Co-operative-Bank-Recruitment.jpg\",\"THE SURAT DISTRICT CO OPERATIVE BANK LTD.\":\"http://paperads.timesascent.com/epaper/output/05112014/9989720_1.1.jpg\",\"THE SURAT PEOPLES CO-OP BANK LTD\":\"http://vidyapur.com/images/company/the-surat-peoples-cooperative-bank-limited-11318051207.JPG\",\"THE SUTEX CO.OP. BANK LTD.\":\"http://2.bp.blogspot.com/-1QN-x-ZTcZ0/VQxFkxCOv5I/AAAAAAAABwA/F6RIoLZKn7o/s1600/The%2BSutex%2BCooperative%2BBank%2BCustomer%2BHelp%2BLine%2BBranch%2BEmail%2BWebsite.jpg\",\"THE TAMILNADU STATE APEX COOPERATIVE BANK LIMITED\":\"http://www.veethi.com/watermark.php?path=images/city-images/fullsize/Chennai-21861.jpg\",\"THE THANE DISTRICT CENTRAL CO-OP BANK LTD\":\"http://thanedistrictbank.com/images/abot.jpg\",\"THE THANE JANATA SAHAKARI BANK LTD\":\"http://management.ind.in/img/p/Thane-Janata-Sahakari-Bank-Panchpakhadi-IFSC-Code-1.jpg\",\"THE VARACHHA CO-OP. BANK LTD.\":\"http://management.ind.in/img/l/Varachha-Bank-Katargam-Branch-2.jpg\",\"THE VISHWESHWAR SAHAKARI BANK LTD.,PUNE\":\"http://photos.alstatic.com/photos/hbP/140X1hbP/Bank-Pune-Bharati-Sahakari-Bank-140X1hbP-4f3399398201a_regular.jpg\",\"THE WEST BENGAL STATE COOPERATIVE BANK LTD\":\"http://management.ind.in/img/n/The-West-Bengal-State-Cooperative-Bank-Limited-1.jpg\",\"TJSB SAHAKARI BANK LTD.\":\"http://freejobalert24.com/wp-content/uploads/2013/09/tjsb-bank-logo.gif\",\"TUMKUR GRAIN MERCHANTS COOPERATIVE BANK LTD.,\":\"http://studychacha.com/img/p/IFSC-Code-Of-TGMC-Bank-Tumkur-2.jpg\",\"UBS AG\":\"http://upload.wikimedia.org/wikipedia/en/thumb/a/ab/UBS_Logo.svg/1280px-UBS_Logo.svg.png\",\"UNITED OVERSEAS BANK\":\"https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/United_Overseas_Bank_Logo.svg/1280px-United_Overseas_Bank_Logo.svg.png\",\"VASAI VIKAS SAHAKARI BANK LTD.\":\"http://vasaivikasbank.com/images/map.jpg\",\"WEST BENGAL STATE COOPERATIVE BANK\":\"http://management.ind.in/img/n/The-West-Bengal-State-Cooperative-Bank-Limited-1.jpg\",\"WESTPAC BANKING CORPORATION\":\"http://bankheadoffice.com/Australia/images/Westpac-Banking-Corporation-logo.gif\",\"WOORI BANK\":\"http://www.wkrb13.com/logos/woori-bank-logo.gif\",\"ZILA SAHKARI BANK LTD GHAZIABAD\":\"http://dcbunnao.org/images/rs.jpg\"}
+    </string>
+    <string name="title_activity_un_lock_page">UnLockPage</string>
+    <string name="title_activity_log_in_page">LogInPage</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
+</resources>

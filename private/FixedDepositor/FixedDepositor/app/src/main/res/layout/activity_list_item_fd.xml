@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/activity_list_item_fd">
+    <ImageView
+        android:id="@+id/BankImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/default_bank1"/>
+    <RelativeLayout
+        android:id="@+id/FDDetails"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/BankImage">
+        <TextView
+            android:id="@+id/FDHolderName"
+            android:layout_width="match_parent"
+            android:text="Sravanth Kurumadddali"
+            android:layout_height="25dp"
+            android:ellipsize="end"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/FDAmountText"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="2,50,000"
+            android:layout_below="@+id/FDHolderName"/>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/FDDuration"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="After 3 months"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/FDDetails"/>
+    <View
+        android:id="@+id/FDImportanceColor"
+        android:layout_width="10dp"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle_red"
+        android:visibility="invisible"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"></View>
+</RelativeLayout>
