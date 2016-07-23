@@ -1,6 +1,7 @@
 package com.pheonixlabs.srkuruma.fixeddepositor;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -157,6 +158,13 @@ public class ItemListActivity extends AppLockActivity
         if (id == R.id.calculator) {
             // Handle the camera action
         } else if (id == R.id.rate) {
+
+            final String myappPackageName = getPackageName(); // getPackageName() from Context or Activity object
+            try {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=" + myappPackageName)));
+            } catch (android.content.ActivityNotFoundException anfe) {
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://play.google.com/store/apps/details?id=" + myappPackageName)));
+            }
 
         } else if (id == R.id.password) {
             Intent intent = new Intent(this, UpdatePasswordPage.class);
