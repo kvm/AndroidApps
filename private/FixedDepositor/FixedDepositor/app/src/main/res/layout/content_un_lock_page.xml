@@ -22,7 +22,7 @@
         android:layout_centerInParent="true"
         android:layout_centerHorizontal="true"/>
 
-    <Button
+    <!--<Button
         android:id="@+id/PinRecoveryButton"
         android:layout_width="150dp"
         android:layout_height="50dp"
@@ -30,5 +30,5 @@
         android:textAlignment="gravity"
         android:gravity="center"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true" />-->
 </RelativeLayout>
