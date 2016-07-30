@@ -8,6 +8,8 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -82,14 +84,14 @@ public class ItemListActivity extends AppLockActivity
 
             // In two-pane mode, list items should be given the
             // 'activated' state when touched.
-            ((ItemListFragment) getSupportFragmentManager()
-                    .findFragmentById(R.id.item_list))
-                    .setActivateOnItemClick(true);
+
+            ItemListFragment fragment = (ItemListFragment)getSupportFragmentManager().findFragmentById(R.id.item_list);
+            fragment.setArguments(getIntent().getExtras());
+            fragment.setActivateOnItemClick(true);
+
         }
 
         fdSqlHelper = new FDDbHelper(getApplicationContext());
-
-        // TODO: If exposing deep links into your app, handle intents here.
     }
 
     /**
@@ -102,7 +104,7 @@ public class ItemListActivity extends AppLockActivity
             // In two-pane mode, show the detail view in this activity by
             // adding or replacing the detail fragment using a
             // fragment transaction.
-            Bundle arguments = new Bundle();
+            Bundle arguments = getIntent().getExtras();
             arguments.putString(ItemDetailFragment.ARG_ITEM_ID, id);
             ItemDetailFragment fragment = new ItemDetailFragment();
             fragment.setArguments(arguments);
@@ -177,5 +179,28 @@ public class ItemListActivity extends AppLockActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.toolbar_manu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+        if (id == R.id.action_search) {
+            Intent intent = new Intent(this, FilterDialog.class);
+            intent.putExtras(getIntent().getExtras());
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

@@ -21,7 +21,7 @@
         </activity>
         <activity
             android:name=".ItemDetailActivity"
-            android:label="@string/title_item_detail"
+            android:label="Fixed Deposit Details"
             android:parentActivityName=".ItemListActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
@@ -31,13 +31,13 @@
         </activity>
         <activity
             android:name=".AddFDPage"
-            android:label="@string/title_activity_add_fdpage"
+            android:label="Add New Fixed Deposit"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:name=".UnLockPage"
-            android:label="@string/title_activity_un_lock_page"
+            android:label="Unlock Manager"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
@@ -50,9 +50,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".UpdatePasswordPage" >
+        <activity android:name=".UpdatePasswordPage"
+            android:label="Password Manager">
         </activity>
-        <activity android:name=".UpdateEmailPage" >
+        <activity android:name=".UpdateEmailPage"
+            android:label="Email Manager">
+        </activity>
+        <activity android:name=".FilterDialog"
+            android:label="Filter"
+            android:theme="@style/Theme.AppCompat.Dialog">
         </activity>
     </application>
 

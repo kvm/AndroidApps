@@ -5,6 +5,8 @@
             android:title="Change Password" />
         <item android:id="@+id/email" android:icon="@android:drawable/ic_dialog_email"
             android:title="Change EmailId" />
+        <item android:id="@+id/Statistics" android:icon="@android:drawable/ic_menu_sort_by_size"
+            android:title="Statistics (coming soon!)"></item>
         <item android:id="@+id/rate" android:icon="@android:drawable/btn_star_big_on"
             android:title="Rate Us!" />
         <item android:id="@+id/calculator" android:icon="@android:drawable/ic_media_play"

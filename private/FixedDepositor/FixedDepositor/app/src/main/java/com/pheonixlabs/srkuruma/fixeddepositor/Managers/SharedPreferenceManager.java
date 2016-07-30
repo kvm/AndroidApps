@@ -16,6 +16,10 @@ public class SharedPreferenceManager {
 
     private String IsFirstTimeKey = "FirstTime";
 
+    private String BankFilterKey = "BankFilter";
+
+    private String HolderFilterKey = "HolderFilter";
+
     private SharedPreferences settings;
 
     public SharedPreferenceManager(Context context)
@@ -63,6 +67,44 @@ public class SharedPreferenceManager {
     {
         SharedPreferences.Editor editor = this.settings.edit();
         editor.remove(IsFirstTimeKey);
+        editor.commit();
+    }
+
+    public String GetHolderFilter()
+    {
+        return this.settings.getString(HolderFilterKey, null);
+    }
+
+    public String GetBankFilter()
+    {
+        return this.settings.getString(BankFilterKey, null);
+    }
+
+    public void SetBankFilter(String bank)
+    {
+        SharedPreferences.Editor editor = this.settings.edit();
+        editor.putString(BankFilterKey, bank);
+        editor.commit();
+    }
+
+    public void SetHolderFilter(String holder)
+    {
+        SharedPreferences.Editor editor = this.settings.edit();
+        editor.putString(HolderFilterKey, holder);
+        editor.commit();
+    }
+
+    public void RemoveBankFilter()
+    {
+        SharedPreferences.Editor editor = this.settings.edit();
+        editor.remove(BankFilterKey);
+        editor.commit();
+    }
+
+    public void RemoveHolderFilter()
+    {
+        SharedPreferences.Editor editor = this.settings.edit();
+        editor.remove(HolderFilterKey);
         editor.commit();
     }
 }

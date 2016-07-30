@@ -11,9 +11,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.pheonixlabs.srkuruma.fixeddepositor.Adapters.FDListAdapter;
+import com.pheonixlabs.srkuruma.fixeddepositor.Common.StringUtils;
 import com.pheonixlabs.srkuruma.fixeddepositor.Comparators.FDComparator;
 import com.pheonixlabs.srkuruma.fixeddepositor.LocalDB.FDDbHelper;
 import com.pheonixlabs.srkuruma.fixeddepositor.LocalDB.Tables.FDEntity;
+import com.pheonixlabs.srkuruma.fixeddepositor.Managers.SharedPreferenceManager;
 import com.pheonixlabs.srkuruma.fixeddepositor.dummy.DummyContent;
 
 import java.util.ArrayList;
@@ -49,8 +51,10 @@ public class ItemListFragment extends ListFragment {
     private int mActivatedPosition = ListView.INVALID_POSITION;
 
     private FDDbHelper dbHelper;
-
     private SQLiteDatabase db;
+    private SharedPreferenceManager sharedPreferenceManager;
+    private String filterBank;
+    private String filterHolder;
 
     /**
      * A callback interface that all activities containing this fragment must
@@ -84,22 +88,29 @@ public class ItemListFragment extends ListFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // read from db all the fds
-        this.dbHelper = new FDDbHelper(getContext());
-        this.db = this.dbHelper.getWritableDatabase();
-        PopulateFdList();
+        Bundle bundle = getArguments();
     }
 
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        this.sharedPreferenceManager = new SharedPreferenceManager(getContext());
 
         // Restore the previously serialized activated item position.
         if (savedInstanceState != null
                 && savedInstanceState.containsKey(STATE_ACTIVATED_POSITION)) {
             setActivatedPosition(savedInstanceState.getInt(STATE_ACTIVATED_POSITION));
         }
+
+        // read from db all the fds
+        this.dbHelper = new FDDbHelper(getContext());
+        this.db = this.dbHelper.getWritableDatabase();
+        this.filterBank = this.sharedPreferenceManager.GetBankFilter();
+        this.filterHolder = this.sharedPreferenceManager.GetHolderFilter();
+        //this.sharedPreferenceManager.RemoveBankFilter();
+        //this.sharedPreferenceManager.RemoveHolderFilter();
+
+        PopulateFdList();
     }
 
     @Override
@@ -150,7 +161,7 @@ public class ItemListFragment extends ListFragment {
 
     private void PopulateFdList()
     {
-        List<FDEntity> fds = GetAllFDs(this.db);
+        List<FDEntity> fds = FilterFDs(GetAllFDs(this.db));
 
         FDListAdapter adapter = new FDListAdapter(
                 getContext(),
@@ -199,5 +210,41 @@ public class ItemListFragment extends ListFragment {
         Collections.sort(entities, new FDComparator());
 
         return entities;
+    }
+
+    public List<FDEntity> FilterFDs(List<FDEntity> allFds)
+    {
+        if(this.filterHolder == null && this.filterBank == null)
+        {
+            return allFds;
+        }
+
+        List<FDEntity> filteredFds = new ArrayList<FDEntity>();
+        if(!StringUtils.IsStringNullOrEmpty(this.filterBank) && !this.filterBank.equals("None"))
+        {
+            for (int i = 0; i < allFds.size(); i++)
+            {
+                if(allFds.get(i).BankName.equals(this.filterBank))
+                {
+                    filteredFds.add(allFds.get(i));
+                }
+            }
+            allFds = new ArrayList<FDEntity>(filteredFds);
+        }
+
+        if(!StringUtils.IsStringNullOrEmpty(this.filterHolder) && !this.filterHolder.equals("None"))
+        {
+            filteredFds = new ArrayList<FDEntity>();
+            for (int i = 0; i < allFds.size(); i++)
+            {
+                if(allFds.get(i).HolderName.equals(this.filterHolder))
+                {
+                    filteredFds.add(allFds.get(i));
+                }
+            }
+            allFds = new ArrayList<FDEntity>(filteredFds);
+        }
+
+        return allFds;
     }
 }
