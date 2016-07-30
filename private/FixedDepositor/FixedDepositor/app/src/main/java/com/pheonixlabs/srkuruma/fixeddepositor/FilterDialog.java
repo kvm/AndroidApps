@@ -88,6 +88,7 @@ public class FilterDialog extends AppCompatActivity {
         this.sharedPreferenceManager.SetHolderFilter(((Spinner) findViewById(R.id.HolderNameFilter)).getSelectedItem().toString());
 
         startActivity(intent);
+        finish();
     }
 
     private boolean ValidateInputFields()
@@ -117,5 +118,6 @@ public class FilterDialog extends AppCompatActivity {
         this.sharedPreferenceManager.SetHolderFilter("None");
 
         startActivity(intent);
+        finish();
     }
 }
